@@ -33,6 +33,7 @@ model Product {
   inStock   Boolean
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
+  category  String
 
   // Relationships
   // Removed: cartItems   CartItem[] // No longer persisting cart items in DB
